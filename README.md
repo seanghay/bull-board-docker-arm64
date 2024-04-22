@@ -4,7 +4,7 @@ Supports both: bull and bullmq. bull-board version v3.2.6
 
 ### Quick start with Docker
 ```
-docker run -p 3000:3000 deadly0/bull-board
+docker run -p 3000:3000 ghcr.io/seanghay/bull-board-docker-arm64:master
 ```
 will run bull-board interface on `localhost:3000` and connect to your redis instance on `localhost:6379` without password.
 
@@ -17,7 +17,7 @@ version: '3.5'
 services:
   bullboard:
     container_name: bullboard
-    image: deadly0/bull-board
+    image: ghcr.io/seanghay/bull-board-docker-arm64:master
     restart: always
     ports:
       - 3000:3000
@@ -62,7 +62,7 @@ services:
 
   bullboard:
     container_name: bullboard
-    image: deadly0/bull-board
+    image: ghcr.io/seanghay/bull-board-docker-arm64:master
     restart: always
     ports:
       - 3000:3000
